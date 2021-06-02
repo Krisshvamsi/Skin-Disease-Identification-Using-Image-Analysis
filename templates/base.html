@@ -1,0 +1,191 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skin disease identification</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="data:image/png;base64,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">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet"> 
+	<style>
+	.bg-dark {
+		background-color: #42678c!important;
+	}
+	#result {
+		color: #0a1c4ed1;
+	}
+   .bg_image {
+      background-image: url('https://www.medicalplasticsnews.com/downloads/4786/download/Medicine.jpg?cb=7364fb2aa7f8e56bd5f419e9f67878d4&w=640');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+     
+    }
+    body {
+    position: relative; 
+  }
+  #ColdSores {padding-top:50px;height:350px;color: #fff; background-color: #99DDC8;}
+  #Eczema {padding-top:50px;height:350px;color: #fff; background-color: #673ab7;}
+  #Hives {padding-top:50px;height:350px;color: #fff; background-color: #ff9800;}
+  #Melanoma {padding-top:50px;height:350px;color: #fff; background-color: #00bcd4;}
+  #Psoriasis {padding-top:50px;height:350px;color: #fff; background-color: #009688;}
+  
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+
+</head>
+
+<body class="bg_image" data-spy="scroll"  data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:black" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+     
+      <a class="navbar-brand" href="#" style="color:white"><i>Skin disease identification using deep learning</i></a>
+    </div>
+    <div>
+      
+        <ul class="nav navbar-nav">
+          <li><div style="padding:10px"><a href="#ColdSores" class="btn btn-warning" style="color:white">Cold sores</a></li></div>
+          <li><a href="#Eczema" class="btn btn-warning" style="color:white">Eczema</a></li>
+          <li><a href="#Hives" class="btn btn-warning" style="color:white">Hives</a></li>
+          <li><a href="#Melanoma" class="btn btn-warning" style="color:white">Melanoma</a></li>
+          <li><a href="#Psoriasis" class="btn btn-warning" style="color:white">Psoriasis</a></li>
+
+        </ul>
+     
+    </div>
+  </div>
+</nav> 
+    <!--
+    <nav class="navbar navbar-primary" style="background-color:#99DDC8">        
+        <div class="container" style="background-color:#99DDC8">
+            <a class="navbar-brand" href="#">Deep learning fors Skin disease identification</a>
+        </div>
+    </nav>   --> 
+    <div class="container blue",>
+        <div id="content" style="margin-top:2em">
+		<div class="container",>
+		  <div class="row">
+			<div class="col-sm-6 bd" >
+			  <h3>Convolution Neural Networks</h3>
+			  <br>
+			  <p style="color:black">Skin diseases are more common than other diseases.  But the cost of skin diagnosis is still limited and very expensive. So, image processing techniques help to build automated screening system for dermatology at an initial stage. The extraction of features plays a key role in helping to classify skin diseases.  This work contributes in the research of skin disease detection. We proposed an image processing-based method to detect skin diseases. This method takes the digital image of disease effect skin area, then use image analysis to identify the type of disease. Our proposed approach is simple and fast . The approach works on the inputs of a color image. Then resize the of the image to extract features using pretrained convolutional neural network.  </p>
+
+				<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" >
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://media.gettyimages.com/vectors/retro-dermatologist-vector-id501240633?s=612x612" style="height:250px" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://thumbs.dreamstime.com/z/dermatologist-concept-illustration-dermatology-specialist-face-skin-dermatologist-concept-dermatology-specialist-face-skin-156387880.jpg" style="height:250px" alt="Third slide">
+    </div>
+  </div>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<div id="ColdSores" class="container-fluid">
+  <h1>Symptoms of Cold sores</h1>
+  <p>1. Tingling and itching.<br>2. Blisters.<br>3. oozing and crusting. </p>
+</div>
+<div id="Eczema" class="container-fluid">
+  <h1>Symptoms of Eczema</h1>
+  <p>1. Dry, sensitive skin.<br>2. Red, inflamed skin.<br>3. Dark colored patches of skin.<br>4. Areas of swelling.</p>
+</div>
+<div id="Hives" class="container-fluid">
+  <h1>Symptoms of Hives</h1>
+  <p>1. Painful swelling on lips, eyelids and inside the throat.<br>2. Itching.<br>3. Welts that vary in size, change shape.</p>
+</div>
+<div id="Melanoma" class="container-fluid">
+  <h1>Symptoms of Melanoma</h1>
+  <p>1. Change in sensation-such as itching, tenderness and pain.<br>2. Change in the surface of mole-scaling, bleeding.</p>
+</div>
+<div id="Psoriasis" class="container-fluid">
+  <h1>Symptoms of Psoriasis</h1>
+  <p>1. Rashes or red patches on skin. <br>2. Painful skin that can crack or bleed. <br>3. Small areas of bleeding where the skin is scratched </p>
+</div>
+			</div>
+			<div class="col-sm-6">
+				<div>
+					<h4>Please upload an infected skin image</h4>
+			<form action = "http://localhost:5000/predict" id="upload-file" method="post" enctype="multipart/form-data">
+				<label for="imageUpload" class="upload-label">
+					Choose...
+				</label>
+				<input type="file" name="image" id="imageUpload" accept=".png, .jpg, .jpeg">
+			</form>
+			
+
+			<div class="image-section" style="display:none;">
+				<div class="img-preview">
+					<div id="imagePreview">
+					</div>
+				</div>
+				<div>
+					<button type="button" class="btn btn-#231942 btn-lg " id="btn-predict">Click on this to see what skin disease it is!</button>
+				</div>
+			</div>
+
+			<div class="loader" style="display:none;"></div>
+
+			<h3>
+				<span class="btn btn-lg" style="color:#231942; background-color:#BE95C4" id="result"> </span>
+			</h3>
+
+		</div>
+			</div>
+			 
+		  </div>
+		</div>
+		</div>
+    </div>
+    <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+
+<footer>
+    <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>    
+</footer>
+
+</html>
